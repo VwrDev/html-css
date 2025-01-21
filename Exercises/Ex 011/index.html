@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente almente ou diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png"> <!--O tam. maximo da imagem seria 700px, contudo sempre deixamos uma margem de +50px para não bugar com a barra de rolagem do navegador-->
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture> <!--Todo esse processo deve obedecer a ordem das media source iniciando pela imagem menor até a imagem maior (g). É importante que todo o codigo seja descrito corretamente para que não haja erro-->
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5 <br> Primeira maneira:</p>
+    <audio src="Media/Jingle Bells - The Soundlings.mp3" controls autoplay></audio> <!--Para ter compactibilidade com todos os navegadores, é bom ter o audio nos formatos MP3, WAV e OGG-->
+    <p>Segunda maneira:</p>
+    <audio preload="metadata" autoplay controls loop> <!--Caso queira que o audio recomece quando chegar no fim, é só adicionar o loop como no codigo descrito-->
+        <source src="Media/Jingle Bells - The Soundlings.mp3" type="audio/mpeg">
+        <source src="Media/Jingle Bells - The Soundlings.mp3" type="audio/ogg"> 
+        <source src="Media/Jingle Bells - The Soundlings.mp3" type="audio/wav"> <!--Tenta evitar o arquivo WAV, pois o mesmo é bastante pesadoo-->
+        <p>Caso o seu navegador não consiga reproduzir o audio. <a href="Media/HTML5 -test.mp4">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+</body>
+</html>

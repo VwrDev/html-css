@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este video está hospedado no meu propio servidor.<br>Primeira maneira.</p>
+    <video src="media/meu-video.mp4" width="560" controls loop></video> <!--A Tag width serve para diminuir o tamanho do espaço que o video ocupa em tela-->
+    <p>Segunda maneira(a mais recomendada).</p>
+    <video width="560" poster="imagens/capa-do-video.png" controls loop> <!--A Tag ´poster serve para adicionar uma capa ao seu video-->
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade de reprodução.</p>
+    </video>
+    <h1>Incorporação de videos externos</h1>
+    <h2>Inserindo videos do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7en2N0ibEyM?si=FUwYTm01PGo7tZEJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Uma outra boa opção para hospedar videos é o VIMEO. Com isso, você consegue incorporar o video do seu perfil vimeo paro o seu site em HTML5.Ele muito utilizado para videos privados, como curso por exemplo.</p>
+</body>
+</html>

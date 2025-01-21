@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc (px é a mais recomendada pela  W3C)
+            
+            Medidas Relativas
+            em, ex, rem, vw,vh, % (em é a mais recomendada pela  W3C)
+            16px geralmente = 1em
+            */
+        }
+
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder; /*Serve para algumas fontes, com a exemplo da font worke sans*/
+            font-size: 3em;
+            font-style: italic;
+        }
+        /*É possivél utilizar o "Shorthand"para indicar todas essas configurações de fonte feitas no h1 de forma mais simplificada-ORDEM DO SHORTHANDS: font-style -> font-wight -> font-size -> font-family*/
+
+        h2 {
+            font: bold 2em 'Work Sans', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facilis harum fugiat, quam non culpa a ipsam quis, pariatur inventore voluptatum, quas reprehenderit alias. Quos, nulla accusamus. Aut, aliquam laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio atque explicabo dolorum aspernatur quae error corrupti nulla cupiditate eos, cumque fugiat facilis at iure? Necessitatibus similique eligendi veritatis minima.</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem pariatur non iusto ullam assumenda asperiores, voluptatum veritatis, dolorum eveniet eos explicabo cum aliquam eaque? Impedit tempora harum illo tempore?</p>
+</body>
+</html>
