@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
@@ -12,11 +12,18 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+            /* Shorthand - background
+                color > image > position > repeat > size [ainda não funciona] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed; 
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,7 +34,11 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ex delectus ipsam, deserunt veniam ad modi? Maiores esse nam ut magnam suscipit quisquam, quis ad assumenda nostrum reprehenderit quo fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, maxime pariatur earum inventore reprehenderit dicta ducimus id dolor ut veritatis atque iusto, consequuntur, fugit animi! Exercitationem odit architecto totam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt maxime neque dolor maiores eos iste at, enim earum expedita aspernatur! Veritatis molestias nihil vitae ratione, quidem doloribus eaque nobis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ex delectus ipsam, deserunt veniam ad modi? Maiores esse nam ut magnam suscipit quisquam, quis ad assumenda nostrum reprehenderit quo fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, maxime pariatur earum inventore reprehenderit dicta ducimus id dolor ut veritatis atque iusto, consequuntur, fugit animi! Exercitationem odit architecto totam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt maxime neque dolor maiores eos iste at, enim earum expedita aspernatur! Veritatis molestias nihil vitae ratione, quidem doloribus eaque nobis.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ex delectus ipsam, deserunt veniam ad modi? Maiores esse nam ut magnam suscipit quisquam, quis ad assumenda nostrum reprehenderit quo fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, maxime pariatur earum inventore reprehenderit dicta ducimus id dolor ut veritatis atque iusto, consequuntur, fugit animi! Exercitationem odit architecto totam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt maxime neque dolor maiores eos iste at, enim earum expedita aspernatur! Veritatis molestias nihil vitae ratione, quidem doloribus eaque nobis.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ex delectus ipsam, deserunt veniam ad modi? Maiores esse nam ut magnam suscipit quisquam, quis ad assumenda nostrum reprehenderit quo fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, maxime pariatur earum inventore reprehenderit dicta ducimus id dolor ut veritatis atque iusto, consequuntur, fugit animi! Exercitationem odit architecto totam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt maxime neque dolor maiores eos iste at, enim earum expedita aspernatur! Veritatis molestias nihil vitae ratione, quidem doloribus eaque nobis.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ex delectus ipsam, deserunt veniam ad modi? Maiores esse nam ut magnam suscipit quisquam, quis ad assumenda nostrum reprehenderit quo fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, maxime pariatur earum inventore reprehenderit dicta ducimus id dolor ut veritatis atque iusto, consequuntur, fugit animi! Exercitationem odit architecto totam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt maxime neque dolor maiores eos iste at, enim earum expedita aspernatur! Veritatis molestias nihil vitae ratione, quidem doloribus eaque nobis.
+        </p>
     </main>
 </body>
 </html>
