@@ -54,6 +54,9 @@ section.normal {
 section.imagem {
     background-color: rgb(50, 50, 50);
     color: white;
+    box-shadow: inset 5px 5px 12px 0px rgba(0, 0, 0, 0.500
+    );
+    background-attachment: fixed;
 }
 
 section.imagem > p {
@@ -61,14 +64,17 @@ section.imagem > p {
     padding: 5px;
     width: 400px;
     background-color: rgba(0, 0, 0, 0.250);
+    text-shadow: 1px 1px 1px black;
 }
 
 section#img01 {
-    background-image: url('../imagens/wash.jpg');
+    background-image: url('imagens/wash.jpg');
+    background-size: cover;
 }
 
 section#img02 {
-    background-image: url('../imagens/polimento.jpg');
+    background-image: url('imagens/polimento.jpg');
+    background-size: cover;
 }
 
 footer a {
