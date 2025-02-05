@@ -42,6 +42,10 @@ section {
     font-size: 2vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -57,6 +61,14 @@ section.imagem > p {
     padding: 5px;
     width: 400px;
     background-color: rgba(0, 0, 0, 0.250);
+}
+
+section#img01 {
+    background-image: url('../imagens/wash.jpg');
+}
+
+section#img02 {
+    background-image: url('../imagens/polimento.jpg');
 }
 
 footer a {
