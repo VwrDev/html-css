@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="POST">
+        <p>
+            <label for="iuser">Usuário:</label>
+            <input type="text" name="user" id="iuser" required minlength="4" size="20" placeholder="nome do usuario"> <!--O requiried serve para informar ao navegador que o campo deve ser preenchido obrigatoriamente-->
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="" id="isenha" required minlength="8" maxlength="12" placeholder="senha"> <!--O placeholder serve para indicar o que sede ser digitado dentro da box-->
+         </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
