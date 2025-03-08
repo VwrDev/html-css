@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*Estilo para impressoras*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em; /*Refere-se ao espaçamento entre linhas*/
+}
+
+menu {
+    display: none; /*Significa que não será exibido*/
+}
+
+article::after {
+    content: 'Esse artigo foi escrito no dia 08/03/2025.';
+}
+
+article {
+    width: 100%;
+}
