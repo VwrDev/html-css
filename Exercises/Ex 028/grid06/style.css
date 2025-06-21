@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.caixa1 {
+    background-color: rgba(0, 128, 0, 0.514);
+
+    grid-area: 1/1/2/5;
+}
+
+.caixa2 {
+    background-color: aquamarine;
+
+    grid-area: 2/1/4/-3;
+}
+
+.caixa3 {
+    background-color: rgba(0, 255, 255, 0.699);
+    
+    grid-area: 2/3/span 2/5;;
+}
